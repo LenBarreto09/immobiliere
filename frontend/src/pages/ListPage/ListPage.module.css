@@ -1,0 +1,87 @@
+/* ListPage Styles */
+
+.container {
+  padding: 2rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: #1f2937;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.buttonSection {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionTitle {
+  margin-bottom: 1.25rem;
+  color: #374151;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.propertyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .buttonContainer {
+    gap: 0.5rem;
+  }
+  
+  .propertyGrid {
+    gap: 1rem;
+  }
+}
